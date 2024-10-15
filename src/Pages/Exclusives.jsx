@@ -7,7 +7,7 @@ function Exclusives() {
 
      const fetchData = async () => {
           try {
-               const api = await fetch('http://localhost:3000/api/special_products');
+               const api = await fetch('https://zopposproject-backend.onrender.com/api/special_products');
                const finalRes = await api.json();
                setData(finalRes);
           } catch (error) {

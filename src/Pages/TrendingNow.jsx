@@ -9,7 +9,7 @@ function TrendingNow() {
 
      const fetchData = async () => {
           try {
-               const api = await fetch('http://localhost:3000/api/trending_now');
+               const api = await fetch('https://zopposproject-backend.onrender.com/api/trending_now');
                const finalRes = await api.json();
                setData(finalRes);
           } catch (error) {

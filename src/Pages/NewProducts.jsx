@@ -15,7 +15,7 @@ function NewProducts() {
   const toast = useToast()
   const fetchData = async () => {
     try {
-      const api = await fetch('http://localhost:3000/api/new_products');
+      const api = await fetch('https://zopposproject-backend.onrender.com/api/new_products');
       const finalRes = await api.json();
       setData(finalRes);
     } catch (error) {

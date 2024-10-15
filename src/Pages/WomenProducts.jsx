@@ -18,7 +18,7 @@ function WomenProducts() {
 
   const fetchData = async () => {
     try {
-      const api = await fetch('http://localhost:3000/api/womens_products');
+      const api = await fetch('https://zopposproject-backend.onrender.com/api/womens_products');
       const finalRes = await api.json();
       setData(finalRes);
     } catch (error) {

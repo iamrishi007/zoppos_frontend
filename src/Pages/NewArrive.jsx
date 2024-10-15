@@ -7,7 +7,7 @@ function NewArrive() {
 
      const fetchData = async () => {
           try {
-               const api = await fetch("http://localhost:3000/api/new_arrivals");
+               const api = await fetch("https://zopposproject-backend.onrender.com/api/new_arrivals");
                const finalRes = await api.json();
                setData(finalRes);
           } catch (error) {
